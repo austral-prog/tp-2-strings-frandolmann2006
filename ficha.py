@@ -25,3 +25,49 @@ def ficha():
     #   - Las 3 notas, su suma, promedio y promedio entero
     #   - Cierre decorativo usando repetición de string ("=" * 24)
     pass
+
+    multilinea = """    ===================================
+    FICHA DEL ALUMNO
+    ==================================="""
+    print(multilinea)
+
+    nombre = input("ingrese su nombre completo: ")
+
+    print(nombre.title())
+
+    email= (input("ingrese su email: "))
+    print(email.lower())
+    print(f"caracteres en nombre: {len(nombre)}")
+
+    lugar = int(nombre.find(" "))
+    print(f"iniciales : {nombre[0].upper()+ nombre[lugar+1].upper()}")
+
+    print(f"usuario: {nombre.lower()[lugar+1:]+"."+ nombre.lower()[:lugar]}")
+    print(f"Email valido:{ '@' in email}")
+    arroba= email.find('@')
+    print(f"Dominio: {email[arroba+1:].lower()}")
+    print(f"Nombre para archivo: {nombre.replace(' ','_').title()}")
+
+    cantidad_de_a= nombre.lower().count("a")
+    print(f"Cantidad de a: {cantidad_de_a}")
+    print(f"codigo secreto: {nombre[::-1]}.".upper())
+
+    n1 = input("Nota 1: ")
+    n2 = input("Nota 2: ")
+    n3 = input("Nota 3: ")
+
+
+    nota1 = int(n1)
+    nota2 = int(n2)
+    nota3 = int(n3)
+
+    suma = nota1 + nota2 + nota3
+    promedio = suma / 3
+    promedio_entero = int(suma // 3)
+
+    print(suma)
+    print(promedio)
+    print(promedio_entero)
+
+    decoracion ="""========================"""
+    print(decoracion)
