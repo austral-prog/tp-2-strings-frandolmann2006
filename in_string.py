@@ -4,9 +4,7 @@ def check_vowels():
     """
     pass
 
-    nombre = input("introduzca su nombre: ")
-    print(nombre.lower())
-
+    nombre=input().lower()
     print(f"contiene a: {'a' in nombre}")
     print(f"contiene e: {'e' in nombre}")
     print(f"contiene i: {'i' in nombre}")
