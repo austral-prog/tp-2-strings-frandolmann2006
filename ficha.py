@@ -26,10 +26,9 @@ def ficha():
     #   - Cierre decorativo usando repetición de string ("=" * 24)
     pass
 
-    multilinea="""========================
-    FICHA DEL ALUMNO
-    ========================"""
-    print(multilinea)
+    print("========================")
+    print("    FICHA DEL ALUMNO")
+    print("========================")
 
     nombre=input("ingrese su nombre completo: ")
 
